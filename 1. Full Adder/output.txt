@@ -1,0 +1,227 @@
+[2026-08-11 05:14:50 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' design.sv testbench.sv  
+TOOL:	xrun	25.03-s001: Started on Aug 11, 2026 at 01:14:51 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		$unit_0x67f934e9
+		top_module
+Loading snapshot worklib.top_module:sv .................... Done
+SVSEED default: 1
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+=================================================================
+              VERIFICATION FULL ADDER IN SV                
+=================================================================
+a=0 b=0 cin=0
+expected_sum=0,expected_carry=0
+actual_sum=0,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=0 cin=1
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=0 cin=0
+expected_sum=0,expected_carry=0
+actual_sum=0,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=0 cin=1
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=1 cin=1
+expected_sum=1,expected_carry=1
+actual_sum=1,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=1 cin=0
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=1 cin=1
+expected_sum=1,expected_carry=1
+actual_sum=1,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=1 cin=1
+expected_sum=1,expected_carry=1
+actual_sum=1,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=0 cin=1
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=1 cin=0
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=0 b=1 cin=0
+expected_sum=1,expected_carry=0
+actual_sum=1,actual_carry=0
++--------+
+|  PASS  |
++--------+
+=========================================================================
+a=1 b=0 cin=1
+expected_sum=0,expected_carry=1
+actual_sum=0,actual_carry=1
++--------+
+|  PASS  |
++--------+
+=========================================================================
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Aug 11, 2026 at 01:14:52 EDT  (total: 00:00:01)
+Done
