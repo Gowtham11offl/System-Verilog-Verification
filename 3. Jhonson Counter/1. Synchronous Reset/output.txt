@@ -1,0 +1,577 @@
+                         Chronologic VCS (TM)
+       Version X-2025.06-SP1_Full64 -- Sun May 17 12:16:38 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'design.sv'
+Parsing design file 'testbench.sv'
+Parsing included file 'transaction.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'scoreboard.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'environment.sv'.
+Back to file 'testbench.sv'.
+Top Level Modules:
+       testbench
+TimeScale is 1 ns / 1 ns
+
+Warning-[INTFDV] VCD dumping of interface/program/package
+testbench.sv, 22
+  Selective VCD dumping of interface 'jc_itf' is not supported.  Selective VCD
+  dumping for interfaces, packages and programs is not supported.
+  Use full VCD dumping '$dumpvars(0)', or use VPD or FSDB dumping, recompile 
+  with '-debug_access'.
+
+Starting vcs inline pass...
+4 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling module jhonson_counter
+recompiling module jc_itf
+recompiling module testbench
+All of 4 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib -L/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib  -Wl,-rpath-link=./   objs/amcQw_d.o  _286_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile -luclinative /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .723 seconds to compile + .753 seconds to elab + .467 seconds to link
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP1_Full64; Runtime version X-2025.06-SP1_Full64;  May 17 12:16 2026
+
+===========================================================================
+                      VERIFICATION JHONSON COUNTER IN SV                   
+===========================================================================
+[time=15] DRIVER: rst=0 
+[time=15] MONITOR: rst=1 q=0000 
+[time=15] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=25] MONITOR: rst=0 q=0000 
+[time=25] DRIVER: rst=0 
+[time=25] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=35] MONITOR: rst=0 q=0001 
+[time=35] DRIVER: rst=0 
+[time=35] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=45] MONITOR: rst=0 q=0011 
+[time=45] DRIVER: rst=0 
+[time=45] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=55] MONITOR: rst=0 q=0111 
+[time=55] DRIVER: rst=1 
+[time=55] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=65] MONITOR: rst=1 q=1111 
+[time=65] DRIVER: rst=0 
+[time=65] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=75] MONITOR: rst=0 q=0000 
+[time=75] DRIVER: rst=0 
+[time=75] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=85] MONITOR: rst=0 q=0001 
+[time=85] DRIVER: rst=0 
+[time=85] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=95] MONITOR: rst=0 q=0011 
+[time=95] DRIVER: rst=0 
+[time=95] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=105] MONITOR: rst=0 q=0111 
+[time=105] DRIVER: rst=0 
+[time=105] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=115] MONITOR: rst=0 q=1111 
+[time=115] DRIVER: rst=0 
+[time=115] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=125] MONITOR: rst=0 q=1110 
+[time=125] DRIVER: rst=0 
+[time=125] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=135] MONITOR: rst=0 q=1100 
+[time=135] DRIVER: rst=0 
+[time=135] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=145] MONITOR: rst=0 q=1000 
+[time=145] DRIVER: rst=0 
+[time=145] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=155] MONITOR: rst=0 q=0000 
+[time=155] DRIVER: rst=0 
+[time=155] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=165] MONITOR: rst=0 q=0001 
+[time=165] DRIVER: rst=0 
+[time=165] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=175] MONITOR: rst=0 q=0011 
+[time=175] DRIVER: rst=0 
+[time=175] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=185] MONITOR: rst=0 q=0111 
+[time=185] DRIVER: rst=0 
+[time=185] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=195] MONITOR: rst=0 q=1111 
+[time=195] DRIVER: rst=0 
+[time=195] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=205] MONITOR: rst=0 q=1110 
+[time=205] DRIVER: rst=0 
+[time=205] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=215] MONITOR: rst=0 q=1100 
+[time=215] DRIVER: rst=0 
+[time=215] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=225] MONITOR: rst=0 q=1000 
+[time=225] DRIVER: rst=0 
+[time=225] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=235] MONITOR: rst=0 q=0000 
+[time=235] DRIVER: rst=1 
+[time=235] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=245] MONITOR: rst=1 q=0001 
+[time=245] DRIVER: rst=0 
+[time=245] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=255] MONITOR: rst=0 q=0000 
+[time=255] DRIVER: rst=0 
+[time=255] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=265] MONITOR: rst=0 q=0001 
+[time=265] DRIVER: rst=0 
+[time=265] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=275] MONITOR: rst=0 q=0011 
+[time=275] DRIVER: rst=1 
+[time=275] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=285] MONITOR: rst=1 q=0111 
+[time=285] DRIVER: rst=0 
+[time=285] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=295] MONITOR: rst=0 q=0000 
+[time=295] DRIVER: rst=1 
+[time=295] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=305] MONITOR: rst=1 q=0001 
+[time=305] DRIVER: rst=1 
+[time=305] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=315] MONITOR: rst=1 q=0000 
+[time=315] DRIVER: rst=0 
+[time=315] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=325] MONITOR: rst=0 q=0000 
+[time=325] DRIVER: rst=0 
+[time=325] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=335] MONITOR: rst=0 q=0001 
+[time=335] DRIVER: rst=0 
+[time=335] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=345] MONITOR: rst=0 q=0011 
+[time=345] DRIVER: rst=0 
+[time=345] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=355] MONITOR: rst=0 q=0111 
+[time=355] DRIVER: rst=0 
+[time=355] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=365] MONITOR: rst=0 q=1111 
+[time=365] DRIVER: rst=0 
+[time=365] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=375] MONITOR: rst=0 q=1110 
+[time=375] DRIVER: rst=0 
+[time=375] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=385] MONITOR: rst=0 q=1100 
+[time=385] DRIVER: rst=0 
+[time=385] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=395] MONITOR: rst=0 q=1000 
+[time=395] DRIVER: rst=0 
+[time=395] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=405] MONITOR: rst=0 q=0000 
+[time=405] DRIVER: rst=0 
+[time=405] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=415] MONITOR: rst=0 q=0001 
+[time=415] DRIVER: rst=1 
+[time=415] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=425] MONITOR: rst=1 q=0011 
+[time=425] DRIVER: rst=0 
+[time=425] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=435] MONITOR: rst=0 q=0000 
+[time=435] DRIVER: rst=0 
+[time=435] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=445] MONITOR: rst=0 q=0001 
+[time=445] DRIVER: rst=1 
+[time=445] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=455] MONITOR: rst=1 q=0011 
+[time=455] DRIVER: rst=0 
+[time=455] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=465] MONITOR: rst=0 q=0000 
+[time=465] DRIVER: rst=0 
+[time=465] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=475] MONITOR: rst=0 q=0001 
+[time=475] DRIVER: rst=0 
+[time=475] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=485] MONITOR: rst=0 q=0011 
+[time=485] DRIVER: rst=0 
+[time=485] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=495] MONITOR: rst=0 q=0111 
+[time=495] DRIVER: rst=0 
+[time=495] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=505] MONITOR: rst=0 q=1111 
+[time=505] DRIVER: rst=0 
+[time=505] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=515] MONITOR: rst=0 q=1110 
+[time=515] DRIVER: rst=0 
+[time=515] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=525] MONITOR: rst=0 q=1100 
+[time=525] DRIVER: rst=0 
+[time=525] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=535] MONITOR: rst=0 q=1000 
+[time=535] DRIVER: rst=0 
+[time=535] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=545] MONITOR: rst=0 q=0000 
+[time=545] DRIVER: rst=0 
+[time=545] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=555] MONITOR: rst=0 q=0001 
+[time=555] DRIVER: rst=0 
+[time=555] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=565] MONITOR: rst=0 q=0011 
+[time=565] DRIVER: rst=0 
+[time=565] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=575] MONITOR: rst=0 q=0111 
+[time=575] DRIVER: rst=0 
+[time=575] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=585] MONITOR: rst=0 q=1111 
+[time=585] DRIVER: rst=0 
+[time=585] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=595] MONITOR: rst=0 q=1110 
+[time=595] DRIVER: rst=0 
+[time=595] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=605] MONITOR: rst=0 q=1100 
+[time=605] DRIVER: rst=0 
+[time=605] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=615] MONITOR: rst=0 q=1000 
+[time=615] DRIVER: rst=0 
+[time=615] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=625] MONITOR: rst=0 q=0000 
+[time=625] DRIVER: rst=0 
+[time=625] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=635] MONITOR: rst=0 q=0001 
+[time=635] DRIVER: rst=0 
+[time=635] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=645] MONITOR: rst=0 q=0011 
+[time=645] DRIVER: rst=1 
+[time=645] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=655] MONITOR: rst=1 q=0111 
+[time=655] DRIVER: rst=0 
+[time=655] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=665] MONITOR: rst=0 q=0000 
+[time=665] DRIVER: rst=0 
+[time=665] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=675] MONITOR: rst=0 q=0001 
+[time=675] DRIVER: rst=0 
+[time=675] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=685] MONITOR: rst=0 q=0011 
+[time=685] DRIVER: rst=0 
+[time=685] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=695] MONITOR: rst=0 q=0111 
+[time=695] DRIVER: rst=0 
+[time=695] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=705] MONITOR: rst=0 q=1111 
+[time=705] DRIVER: rst=0 
+[time=705] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=715] MONITOR: rst=0 q=1110 
+[time=715] DRIVER: rst=1 
+[time=715] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=725] MONITOR: rst=1 q=1100 
+[time=725] DRIVER: rst=0 
+[time=725] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=735] MONITOR: rst=0 q=0000 
+[time=735] DRIVER: rst=1 
+[time=735] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=745] MONITOR: rst=1 q=0001 
+[time=745] DRIVER: rst=0 
+[time=745] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=755] MONITOR: rst=0 q=0000 
+[time=755] DRIVER: rst=0 
+[time=755] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=765] MONITOR: rst=0 q=0001 
+[time=765] DRIVER: rst=1 
+[time=765] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=775] MONITOR: rst=1 q=0011 
+[time=775] DRIVER: rst=0 
+[time=775] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=785] MONITOR: rst=0 q=0000 
+[time=785] DRIVER: rst=1 
+[time=785] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=795] MONITOR: rst=1 q=0001 
+[time=795] DRIVER: rst=0 
+[time=795] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=805] MONITOR: rst=0 q=0000 
+[time=805] DRIVER: rst=0 
+[time=805] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=815] MONITOR: rst=0 q=0001 
+[time=815] DRIVER: rst=0 
+[time=815] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=825] MONITOR: rst=0 q=0011 
+[time=825] DRIVER: rst=0 
+[time=825] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=835] MONITOR: rst=0 q=0111 
+[time=835] DRIVER: rst=0 
+[time=835] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=845] MONITOR: rst=0 q=1111 
+[time=845] DRIVER: rst=0 
+[time=845] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=855] MONITOR: rst=0 q=1110 
+[time=855] DRIVER: rst=0 
+[time=855] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=865] MONITOR: rst=0 q=1100 
+[time=865] DRIVER: rst=0 
+[time=865] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+[time=875] MONITOR: rst=0 q=1000 
+[time=875] DRIVER: rst=0 
+[time=875] Actual_q =1000   Expected_q=1000
+  PASS 
+=========================================================================
+[time=885] MONITOR: rst=0 q=0000 
+[time=885] DRIVER: rst=0 
+[time=885] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=895] MONITOR: rst=0 q=0001 
+[time=895] DRIVER: rst=1 
+[time=895] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=905] MONITOR: rst=1 q=0011 
+[time=905] DRIVER: rst=0 
+[time=905] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=915] MONITOR: rst=0 q=0000 
+[time=915] DRIVER: rst=0 
+[time=915] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=925] MONITOR: rst=0 q=0001 
+[time=925] DRIVER: rst=1 
+[time=925] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=935] MONITOR: rst=1 q=0011 
+[time=935] DRIVER: rst=0 
+[time=935] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=945] MONITOR: rst=0 q=0000 
+[time=945] DRIVER: rst=0 
+[time=945] Actual_q =0000   Expected_q=0000
+  PASS 
+=========================================================================
+[time=955] MONITOR: rst=0 q=0001 
+[time=955] DRIVER: rst=0 
+[time=955] Actual_q =0001   Expected_q=0001
+  PASS 
+=========================================================================
+[time=965] MONITOR: rst=0 q=0011 
+[time=965] DRIVER: rst=0 
+[time=965] Actual_q =0011   Expected_q=0011
+  PASS 
+=========================================================================
+[time=975] MONITOR: rst=0 q=0111 
+[time=975] DRIVER: rst=0 
+[time=975] Actual_q =0111   Expected_q=0111
+  PASS 
+=========================================================================
+[time=985] MONITOR: rst=0 q=1111 
+[time=985] DRIVER: rst=0 
+[time=985] Actual_q =1111   Expected_q=1111
+  PASS 
+=========================================================================
+[time=995] MONITOR: rst=0 q=1110 
+[time=995] DRIVER: rst=0 
+[time=995] Actual_q =1110   Expected_q=1110
+  PASS 
+=========================================================================
+[time=1005] MONITOR: rst=0 q=1100 
+[time=1005] DRIVER: rst=0 
+[time=1005] Actual_q =1100   Expected_q=1100
+  PASS 
+=========================================================================
+#####################################################
+#     TOTAL NO OF TEST_CASES=100                    #
+#     PASSED=100                                    #
+#     FAILED=0                                      #
+#     SUCCESS RATE=100.000000                       #
+#####################################################
+$finish called from file "environment.sv", line 51.
+$finish at simulation time                 1006
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1006 ns
+CPU Time:      0.600 seconds;       Data structure size:   0.0Mb
+Sun May 17 12:16:41 2026
